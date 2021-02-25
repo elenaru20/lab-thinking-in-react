@@ -1,6 +1,10 @@
 import React from 'react';
 
-{/* <SearchBar inputHandler={this.inputHandler} search={this.state.search} /> */}
+{/* <SearchBar 
+setQuery={this.setQuery} 
+search={this.state.search} 
+checkBox={this.state.checkBox}
+/> */}
 
 class SearchBar extends React.Component {
 
@@ -23,7 +27,7 @@ class SearchBar extends React.Component {
                     onChange={this.handleChange}
                     id="searchBar"
                 />
-                
+
                 <label htmlFor="checkBox">
                     Only show products in stock
                 </label>
@@ -36,7 +40,6 @@ class SearchBar extends React.Component {
                 />
             </div>
         )
-
     }
 }
 
